@@ -13,12 +13,23 @@ body {
     cursor: pointer;
     font-family: Times New Roman;
     
+}
+
+.navbar-img {
+    
+    height: 50px;
+    width: 50px;
+}
+
+
     
     
 
-}
+
+ 
 .nav-link {
     margin-right: 1em !important;
+    
 
     
 }
@@ -61,13 +72,34 @@ body {
     transform: translate(-50%, -55%);
     text-align: center;
     line-height: 3;
+
     }
+
+
     .description h1 {
         color: #b4ad46;
         line-height: 2.5;
+        animation-duration: 4s;
+        animation-name: move-to-right;
         
         
     }
+    @keyframes move-to-right {
+        0% {
+          transform: translateX(-10rem);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        80% {
+          transform: translateX(2rem);
+        }
+        100% {
+          transform: translate(0);
+          opacity: 1;
+        }
+       }
     .description p {
         color: #b4ad46;
         font-size: 1.3rem;
@@ -75,7 +107,26 @@ body {
         top: 20px;
         height: -2em;
         padding-bottom: 2em;
+        animation-duration: 4s;
+        animation-name: move-to-left;
+        
     }
+    @keyframes move-to-left {
+        0% {
+          transform: translateX(10rem);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        80% {
+          transform: translateX(-2rem);
+        }
+        100% {
+          transform: translate(0);
+          opacity: 1;
+        }
+       }
 
     
     
@@ -90,7 +141,22 @@ body {
         border-radius: 0;
         color:#fff;
         line-height: 2.5;
+        animation-duration: 3s;
+        animation-name: move-to-top;
+
     }
+
+    @keyframes move-to-top {
+        0% {
+          transform: translateY(6rem);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0);
+          opacity: 1;
+        }
+       }
+
     .description button:hover {
         border:1px solid #fff;
         background:#fff;
@@ -140,15 +206,20 @@ body {
     background-color: black;
     border: 1px solid yellow;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: -20px;
 }
 .features .btn:hover {
     background-color: #333;
     border: 1px solid #333;
 }
 
+
+
 .page-footer {
-    background-color: #9fd3c7;
+    
+    border:1px solid #b4ad46;
+    background: #b4ad46;
     color: black;
     padding: 60px 0 30px;
     font-family: 'Times New Roman', Times, serifs
