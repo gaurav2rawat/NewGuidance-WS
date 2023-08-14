@@ -13,6 +13,7 @@ body {
     cursor: pointer;
     font-family: Times New Roman;
     
+    
 }
 
 .navbar-img {
@@ -79,8 +80,9 @@ body {
     .description h1 {
         color: #b4ad46;
         line-height: 2.5;
-        animation-duration: 4s;
+        animation-duration: 3s;
         animation-name: move-to-right;
+        filter: brightness(1.75);
         
         
     }
@@ -88,16 +90,20 @@ body {
         0% {
           transform: translateX(-10rem);
           opacity: 0;
+          filter: brightness(.55)
         }
         10% {
           opacity: 0.8;
+          filter: brightness(.75)
         }
         80% {
           transform: translateX(2rem);
+          filter: brightness(1)
         }
         100% {
           transform: translate(0);
           opacity: 1;
+          filter: brightness(1.75);
         }
        }
     .description p {
@@ -107,24 +113,28 @@ body {
         top: 20px;
         height: -2em;
         padding-bottom: 2em;
-        animation-duration: 4s;
+        animation-duration: 3s;
         animation-name: move-to-left;
+        filter: brightness(1.0)
         
     }
     @keyframes move-to-left {
         0% {
           transform: translateX(10rem);
           opacity: 0;
+          filter: brightness(.45);
         }
         10% {
           opacity: 0.8;
         }
         80% {
           transform: translateX(-2rem);
+          filter: brightness(.75);
         }
         100% {
           transform: translate(0);
           opacity: 1;
+          filter: brightness(1.0);
         }
        }
 
@@ -141,19 +151,24 @@ body {
         border-radius: 0;
         color:#fff;
         line-height: 2.5;
-        animation-duration: 3s;
+        animation-duration: 2.6s;
         animation-name: move-to-top;
+        filter: brightness(1.25);
 
     }
 
     @keyframes move-to-top {
         0% {
           transform: translateY(6rem);
-          opacity: 0;
+          opacity: .5;
+          filter: brightness(.5);
+          
         }
         100% {
           transform: translate(0);
           opacity: 1;
+          filter: brightness(1);
+          
         }
        }
 
@@ -188,7 +203,13 @@ body {
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+    font-style: italic;
+    font-family: sans-serif;
+   
 }
+
+    
+
 .features img {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -222,11 +243,21 @@ body {
     background: #b4ad46;
     color: black;
     padding: 60px 0 30px;
-    font-family: 'Times New Roman', Times, serifs
+    font-family: 'Times New Roman', Times, serifs;
+    font-style: oblique ;
 }
+
+.leftfooter{
+    margin-left: -55px;
+}
+    
+
+
+
 .footer-copyright {
     color: yellow; 
     padding: 40px 0;
+    margin-left: -35px;
 }
 
 @media (max-width: 575.98px) {
