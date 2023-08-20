@@ -28,7 +28,7 @@ body {
     display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1260px;
+	width: 580px;
 	height: 600px;
     flex-wrap: wrap;
     color: yellow;
@@ -396,6 +396,14 @@ body {
 
 
 @media (max-width: 575.98px) {
+
+
+    .navbar-img{
+        margin-right: auto;
+    }
+
+
+
     .description {
         left: 0;
         padding: 0 15px;
