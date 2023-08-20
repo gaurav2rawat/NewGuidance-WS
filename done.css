@@ -24,6 +24,34 @@ body {
     
 }
 
+.Courses{
+    background-color: #b4ad46;
+    height: 480px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serifs;
+    font-style: oblique;
+
+    
+}
+
+.course-heading{
+    text-decoration-line: underline;
+    color: #142d4c;
+
+}
+
+.course-name{
+    color: #142d4c;
+
+}
+
+.course-text{
+    color: #142d4c;
+    font-family: 'Times New Roman', Times, serifs;
+    font-style: oblique;
+}
+
+
 
 
     
@@ -83,7 +111,7 @@ body {
     .description h1 {
         color: #b4ad46;
         line-height: 2.5;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-name: move-to-right;
         filter: brightness(1.75);
         
@@ -116,9 +144,9 @@ body {
         top: 20px;
         height: -2em;
         padding-bottom: 2em;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-name: move-to-left;
-        filter: brightness(1.0)
+        filter: brightness(1.0);
         
     }
     @keyframes move-to-left {
@@ -149,14 +177,18 @@ body {
 
 
 .description button {
-        border:1px solid #b4ad46;
+        border: 10px solid #b4ad46;
         background: #b4ad46;
         border-radius: 0;
         color:#fff;
-        line-height: 2.5;
-        animation-duration: 2.6s;
+        line-height: 1.5;
+        animation-duration: 1.6s;
         animation-name: move-to-top;
         filter: brightness(1.25);
+        
+
+        
+        
          
 
     }
@@ -175,6 +207,8 @@ body {
           
         }
        }
+
+       
 
     .description button:hover {
         border:1px solid #fff;
@@ -279,8 +313,8 @@ body {
 .rlogo{
     height: 50px;
     width: 50px;
-    padding: 5px;
-    animation: rotation 1s infinite alternate-reverse;
+    padding: 7px;
+    animation: rotation .5s infinite linear;
 
 
 }
@@ -316,9 +350,17 @@ body {
     .description p {
         font-size: 1.2rem;
     }
+
+    .description button{
+        
+        padding: 2px;
+        font-size: 1rem;
+    }
+
+    
  
     .features {
-        margin:0px;
+        margin:15px;
         
         
         
