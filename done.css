@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background: #142d4c;
+    
 }
 .navbar {
     background: #142d4c;
@@ -18,9 +19,12 @@ body {
 }
 
 .navbar-img {
+    max-height: 50px;
+    max-width: 50px;
+    height: auto;
+    width: auto;
     
-    height: 50px;
-    width: 50px;
+    
     
 }
 
@@ -28,19 +32,31 @@ body {
     display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 580px;
-	height: 600px;
+	width: 800px;
+	height: 580px;
     flex-wrap: wrap;
-    color: yellow;
+    color: 	yellow;
     font-weight: bolder;
     
-    background-color: #ececec;
+    background-color: white;
+    
     
 
 
 
     
 }
+
+.child{
+    background-color: black;
+    border: yellow; border-width: 90px; border-style: ridge;
+
+    
+
+    
+}
+
+
 
 
 
@@ -67,10 +83,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Times New Roman', Times, serifs;
-    font-style: oblique ;
+    font-style:normal;
     flex-wrap: wrap;
     font-weight: 900px;
     background-color: #b4ad46;
+    
 	
 	&::before {
 		content: '';
@@ -97,6 +114,7 @@ body {
 		width: calc(100% - 12px);
 		height: calc(100% - 12px);
 		background: black;
+        filter: brightness(100);
 		border-radius: 5px;
 		align-content: center;
 		align-self: center;
@@ -106,6 +124,8 @@ body {
 
 .course-heading{
     text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 
 }
 
@@ -295,6 +315,7 @@ body {
 	margin: 4em auto;
 	padding: 1em;
 	position: relative;
+    
 
 }
 .feature-title {
@@ -339,7 +360,7 @@ body {
     border: 1px solid black;
     color: #fff;
     margin-top: 10px;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
 }
 .features .btn:hover {
     background-color: #333;
@@ -367,7 +388,7 @@ body {
 
 .footer-copyright {
     color: yellow; 
-    padding: 40px 15px;
+    padding: 30px 15px;
     margin-left: 0px;
     
 }
@@ -399,7 +420,9 @@ body {
 
 
     .navbar-img{
-        margin-right: auto;
+       
+        display: none;
+        
     }
 
 
@@ -431,13 +454,14 @@ body {
  
     .features {
         margin:15px;
+        text-align: center;
         
         
         
     }
 
     .feature-title{
-        text-align: center;
+        text-align: left;
         margin-top: 20px;
     }
 
@@ -462,6 +486,8 @@ body {
         justify-content: center;
 	    align-items: left;
     }
+   
+
 
     
 
